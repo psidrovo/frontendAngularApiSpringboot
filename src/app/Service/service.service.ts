@@ -8,7 +8,7 @@ export class ServiceService {
   
   constructor(private http:HttpClient) { }
 
-  Url='http://34.230.85.161:8080/usuario';
+  Url='http://192.168.3.40:8080/usuario';
 
   getPersonas(){
     return this.http.get<Persona[]>(this.Url);
